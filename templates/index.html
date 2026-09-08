@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SkillPath AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="bg-orb orb1"></div><div class="bg-orb orb2"></div>
+<header class="topbar">
+  <div class="brand"><div class="logo">✦</div><div><h1>SkillPath <span>AI</span></h1><p>Career Intelligence for Students</p></div></div>
+  <div class="top-pill">● AI Assessment</div>
+</header>
+<main>
+<section class="hero">
+  <div><div class="eyebrow">PERSONALIZED CAREER INTELLIGENCE</div>
+  <h2>Discover your <span>skill gap.</span><br>Build your future.</h2>
+  <p>Enter any target career, test your knowledge with adaptive MCQs, analyze your resume, compare a job description, and receive a personalized roadmap.</p></div>
+  <div class="hero-card"><div class="mini-icon">⚡</div><strong>Smart Assessment</strong><small>Adaptive • Skill-wise • Personalized</small></div>
+</section>
+<div class="steps"><div class="step active"><b>01</b><span>Profile</span></div><i>→</i><div class="step"><b>02</b><span>Assessment</span></div><i>→</i><div class="step"><b>03</b><span>AI Analysis</span></div><i>→</i><div class="step"><b>04</b><span>Roadmap</span></div></div>
+
+<section class="card" id="profile">
+  <div class="card-title"><div><span class="section-tag">STEP 01</span><h3>Build your student profile</h3><p>Your target career is <b>not fixed</b> — enter your own career below.</p></div><div class="round-icon">👤</div></div>
+  <div class="grid">
+    <label>Student Name<input id="studentName" placeholder="e.g. Vaibhav Garkar"></label>
+    <label>Education / Branch<input id="education" placeholder="e.g. Engineering - CSE"></label>
+    <label class="wide">Current Skills<input id="currentSkills" placeholder="e.g. Excel, SQL, Python"></label>
+    <label>Academic Performance <span class="muted">(%)</span><input id="academicScore" type="number" min="0" max="100" value="70"></label>
+    <label>Target Career<select id="career"><option value="">Choose from examples</option>{% for career in careers %}<option value="{{ career }}">{{ career }}</option>{% endfor %}</select>
+      <input id="customCareer" placeholder="Or type your own career, e.g. Cyber Security Analyst"></label>
+    <label class="wide">Resume Text <span class="muted">(optional)</span><textarea id="resumeText" rows="5" placeholder="Paste your resume text here. SkillPath AI will extract supported skills."></textarea></label>
+    <label class="wide">Job Description <span class="muted">(optional)</span><textarea id="jobDescription" rows="5" placeholder="Paste a job description to compare its required skills with your target career."></textarea></label>
+  </div>
+  <div class="feature-note">🤖 <b>How it works:</b> your career name is analyzed. For a new career, the system detects skills from your current-skills list and job description and creates the assessment around them.</div>
+  <button class="primary" onclick="startAssessment()">Start AI Assessment <span>→</span></button>
+  <p class="privacy">🔒 This prototype processes the assessment locally on your Flask application.</p>
+</section>
+
+<section class="card hidden" id="quiz">
+  <div class="quiz-head"><div><span class="section-tag">STEP 02</span><h3 id="quizTitle">Adaptive Assessment</h3><p id="progress"></p></div><div class="timer"><span>⏱</span><strong id="timer">10:00</strong></div></div>
+  <div class="hint">🧠 Adaptive mode: correct answers increase difficulty; incorrect answers reduce difficulty. Questions are randomized.</div>
+  <div id="questions"></div>
+  <button class="primary" id="nextBtn" onclick="nextQuestion()">Next Question <span>→</span></button>
+  <button class="secondary hidden" id="submitBtn" onclick="submitAssessment()">Finish & Analyze</button>
+</section>
+
+<section class="card hidden" id="result">
+  <div class="result-head"><div><span class="section-tag">STEP 03–04</span><h3>Your AI Career Report</h3><p>Personalized readiness, resume analysis, job matching and learning roadmap.</p></div><div class="ai-mark">✦ AI</div></div>
+  <div class="profile-summary" id="profileSummary"></div>
+  <div class="score-grid"><div class="score-box main-score"><span>Career Readiness</span><strong id="overall">0%</strong><small>Overall readiness</small></div><div class="score-box"><span>Assessment Score</span><strong id="assessment">0%</strong><small>MCQ performance</small></div></div>
+  <h3 class="subheading">Skill Gap Detection</h3><div id="skillCards"></div>
+  <div class="analysis-grid">
+    <div class="insight-card" id="resumeAnalysis"><h3>📄 Resume Skill Extraction</h3></div>
+    <div class="insight-card" id="jobAnalysis"><h3>💼 Job Description Matcher</h3></div>
+  </div>
+  <h3 class="subheading">AI Recommendations</h3><div class="recommendations" id="recommendations"></div>
+  <h3 class="subheading">Personalized Learning Roadmap</h3><div id="roadmap"></div>
+  <button class="secondary" onclick="location.reload()">↻ Create New Analysis</button>
+</section>
+</main>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

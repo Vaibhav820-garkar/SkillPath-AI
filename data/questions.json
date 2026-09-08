@@ -1,0 +1,79 @@
+{
+  "SQL": [
+    {"id":"sql1","question":"Which clause is used to filter grouped records?","options":["WHERE","GROUP BY","HAVING","ORDER BY"],"answer":"HAVING","difficulty":"medium"},
+    {"id":"sql2","question":"Which JOIN returns only matching rows from both tables?","options":["LEFT JOIN","RIGHT JOIN","INNER JOIN","CROSS JOIN"],"answer":"INNER JOIN","difficulty":"easy"},
+    {"id":"sql3","question":"Which command removes all rows while keeping the table structure?","options":["DROP","TRUNCATE","REMOVE","CLEAR"],"answer":"TRUNCATE","difficulty":"medium"},
+    {"id":"sql4","question":"Which function returns the number of rows?","options":["SUM()","COUNT()","TOTAL()","ROWS()"],"answer":"COUNT()","difficulty":"easy"},
+    {"id":"sql5","question":"Which keyword removes duplicate rows from a SELECT result?","options":["UNIQUE","DISTINCT","ONLY","DEDUP"],"answer":"DISTINCT","difficulty":"easy"}
+  ],
+  "Python": [
+    {"id":"py1","question":"Which data type is immutable?","options":["List","Dictionary","Set","Tuple"],"answer":"Tuple","difficulty":"easy"},
+    {"id":"py2","question":"Which keyword defines a function?","options":["func","define","def","function"],"answer":"def","difficulty":"easy"},
+    {"id":"py3","question":"What does len([10,20,30]) return?","options":["2","3","4","30"],"answer":"3","difficulty":"easy"},
+    {"id":"py4","question":"Which library is widely used for tabular data analysis?","options":["NumPy","Pandas","Flask","Tkinter"],"answer":"Pandas","difficulty":"medium"},
+    {"id":"py5","question":"What is the result of 2 ** 3 in Python?","options":["5","6","8","9"],"answer":"8","difficulty":"easy"}
+  ],
+  "Excel": [
+    {"id":"ex1","question":"Which function calculates the arithmetic mean?","options":["COUNT","SUM","AVERAGE","MEANVALUE"],"answer":"AVERAGE","difficulty":"easy"},
+    {"id":"ex2","question":"Which feature summarizes data by categories?","options":["PivotTable","Spell Check","Page Break","Format Painter"],"answer":"PivotTable","difficulty":"medium"},
+    {"id":"ex3","question":"Which symbol starts a formula in Excel?","options":["#","=","@","$"],"answer":"=","difficulty":"easy"},
+    {"id":"ex4","question":"Which function looks up a value vertically in older Excel versions?","options":["VLOOKUP","HLOOKUP","MATCHROW","SEARCHV"],"answer":"VLOOKUP","difficulty":"medium"},
+    {"id":"ex5","question":"Which chart is commonly used to compare categories?","options":["Bar chart","Scatter only","Surface only","Radar only"],"answer":"Bar chart","difficulty":"easy"}
+  ],
+  "Statistics": [
+    {"id":"st1","question":"What is the middle value of an ordered dataset called?","options":["Mean","Median","Mode","Range"],"answer":"Median","difficulty":"easy"},
+    {"id":"st2","question":"Which measure describes spread around the mean?","options":["Variance","Median","Mode","Frequency"],"answer":"Variance","difficulty":"medium"},
+    {"id":"st3","question":"What is the most frequent value called?","options":["Mean","Median","Mode","Range"],"answer":"Mode","difficulty":"easy"},
+    {"id":"st4","question":"A correlation coefficient close to +1 indicates what?","options":["Strong positive relationship","Strong negative relationship","No relationship","Random error"],"answer":"Strong positive relationship","difficulty":"medium"},
+    {"id":"st5","question":"What is the probability of a certain event?","options":["0","0.5","1","Depends always"],"answer":"1","difficulty":"easy"}
+  ],
+  "Power BI": [
+    {"id":"pb1","question":"What is Power BI mainly used for?","options":["Video editing","Business intelligence and data visualization","Operating systems","Web hosting"],"answer":"Business intelligence and data visualization","difficulty":"easy"},
+    {"id":"pb2","question":"Which language is commonly used for measures in Power BI?","options":["DAX","HTML","CSS","Bash"],"answer":"DAX","difficulty":"medium"},
+    {"id":"pb3","question":"Which view is used to create relationships between tables?","options":["Model view","Reading view","Print view","Code view"],"answer":"Model view","difficulty":"medium"},
+    {"id":"pb4","question":"A dashboard is primarily used to display what?","options":["Raw code","Key insights and visual summaries","Only images","Only database schemas"],"answer":"Key insights and visual summaries","difficulty":"easy"},
+    {"id":"pb5","question":"Which visual is suitable for showing a trend over time?","options":["Line chart","Pie chart only","Card only","Slicer only"],"answer":"Line chart","difficulty":"easy"}
+  ],
+  "Git": [
+    {"id":"git1","question":"Which command creates a local Git repository?","options":["git start","git init","git create","git repo"],"answer":"git init","difficulty":"easy"},
+    {"id":"git2","question":"Which command records staged changes?","options":["git save","git commit","git record","git push"],"answer":"git commit","difficulty":"easy"},
+    {"id":"git3","question":"Which command sends local commits to a remote repository?","options":["git send","git upload","git push","git publish"],"answer":"git push","difficulty":"easy"},
+    {"id":"git4","question":"Which command copies a remote repository locally?","options":["git clone","git copy","git pullall","git fork"],"answer":"git clone","difficulty":"easy"},
+    {"id":"git5","question":"Which file commonly lists files Git should ignore?","options":[".gitkeep",".gitignore",".ignoregit","git.config"],"answer":".gitignore","difficulty":"medium"}
+  ],
+  "OOP": [
+    {"id":"oop1","question":"Which concept bundles data and methods together?","options":["Encapsulation","Compilation","Iteration","Indexing"],"answer":"Encapsulation","difficulty":"easy"},
+    {"id":"oop2","question":"Which concept allows one interface to have different implementations?","options":["Polymorphism","Serialization","Parsing","Iteration"],"answer":"Polymorphism","difficulty":"medium"},
+    {"id":"oop3","question":"Creating a new class from an existing class is called?","options":["Inheritance","Aggregation only","Casting","Overloading only"],"answer":"Inheritance","difficulty":"easy"},
+    {"id":"oop4","question":"What is a constructor primarily used for?","options":["Initialize objects","Delete classes","Compile code","Create databases"],"answer":"Initialize objects","difficulty":"easy"},
+    {"id":"oop5","question":"Hiding implementation details and showing essential features is?","options":["Abstraction","Duplication","Indexing","Normalization"],"answer":"Abstraction","difficulty":"medium"}
+  ],
+  "APIs": [
+    {"id":"api1","question":"What does API commonly stand for?","options":["Application Programming Interface","Application Process Internet","Advanced Program Input","Automated Programming Instruction"],"answer":"Application Programming Interface","difficulty":"easy"},
+    {"id":"api2","question":"Which HTTP method is commonly used to retrieve data?","options":["GET","POST","PATCH","DELETE"],"answer":"GET","difficulty":"easy"},
+    {"id":"api3","question":"Which HTTP status means Not Found?","options":["200","201","404","500"],"answer":"404","difficulty":"easy"},
+    {"id":"api4","question":"Which format is commonly used for REST API data exchange?","options":["JSON","EXE","PSD","MP3"],"answer":"JSON","difficulty":"easy"},
+    {"id":"api5","question":"Which HTTP method is commonly used to create a resource?","options":["GET","POST","HEAD","OPTIONS"],"answer":"POST","difficulty":"medium"}
+  ],
+  "HTML/CSS": [
+    {"id":"web1","question":"Which HTML tag creates a hyperlink?","options":["<a>","<link>","<href>","<url>"],"answer":"<a>","difficulty":"easy"},
+    {"id":"web2","question":"Which CSS property changes text color?","options":["font-color","color","text-color","foreground"],"answer":"color","difficulty":"easy"},
+    {"id":"web3","question":"Which language styles an HTML page?","options":["CSS","SQL","JSON","CSV"],"answer":"CSS","difficulty":"easy"},
+    {"id":"web4","question":"Which CSS layout system is designed for one-dimensional layouts?","options":["Flexbox","FTP","SMTP","DOM"],"answer":"Flexbox","difficulty":"medium"},
+    {"id":"web5","question":"Which HTML element is normally used for the main page heading?","options":["<h1>","<head>","<title>","<header1>"],"answer":"<h1>","difficulty":"easy"}
+  ],
+  "JavaScript": [
+    {"id":"js1","question":"Which keyword declares a block-scoped variable that can be reassigned?","options":["var","let","const","static"],"answer":"let","difficulty":"easy"},
+    {"id":"js2","question":"Which method converts a JSON string into a JavaScript object?","options":["JSON.parse()","JSON.convert()","JSON.object()","JSON.read()"],"answer":"JSON.parse()","difficulty":"medium"},
+    {"id":"js3","question":"Which symbol is used for strict equality?","options":["=","==","===","!="],"answer":"===","difficulty":"easy"},
+    {"id":"js4","question":"Which browser API selects an element by its id?","options":["document.getElementById()","window.id()","element.findId()","document.selectIdOnly()"],"answer":"document.getElementById()","difficulty":"easy"},
+    {"id":"js5","question":"What does Array.map() return?","options":["A new transformed array","Only the first item","A boolean","A string always"],"answer":"A new transformed array","difficulty":"medium"}
+  ],
+  "Machine Learning": [
+    {"id":"ml1","question":"What type of learning uses labeled training data?","options":["Supervised learning","Unsupervised learning","Random learning","Manual learning"],"answer":"Supervised learning","difficulty":"easy"},
+    {"id":"ml2","question":"Which task predicts a continuous numeric value?","options":["Regression","Classification","Clustering","Association"],"answer":"Regression","difficulty":"easy"},
+    {"id":"ml3","question":"Which metric is commonly used for classification accuracy?","options":["Accuracy","RMSE only","MAE only","Variance only"],"answer":"Accuracy","difficulty":"easy"},
+    {"id":"ml4","question":"What is overfitting?","options":["Model memorizes training data and generalizes poorly","Model has no parameters","Dataset has no labels","Model always underperforms training data"],"answer":"Model memorizes training data and generalizes poorly","difficulty":"medium"},
+    {"id":"ml5","question":"Which method can split data into training and testing sets?","options":["train_test_split","data_splitter_only","model.divide","fit_split"],"answer":"train_test_split","difficulty":"medium"}
+  ]
+}
