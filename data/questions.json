@@ -1,79 +1,1344 @@
 {
   "SQL": [
-    {"id":"sql1","question":"Which clause is used to filter grouped records?","options":["WHERE","GROUP BY","HAVING","ORDER BY"],"answer":"HAVING","difficulty":"medium"},
-    {"id":"sql2","question":"Which JOIN returns only matching rows from both tables?","options":["LEFT JOIN","RIGHT JOIN","INNER JOIN","CROSS JOIN"],"answer":"INNER JOIN","difficulty":"easy"},
-    {"id":"sql3","question":"Which command removes all rows while keeping the table structure?","options":["DROP","TRUNCATE","REMOVE","CLEAR"],"answer":"TRUNCATE","difficulty":"medium"},
-    {"id":"sql4","question":"Which function returns the number of rows?","options":["SUM()","COUNT()","TOTAL()","ROWS()"],"answer":"COUNT()","difficulty":"easy"},
-    {"id":"sql5","question":"Which keyword removes duplicate rows from a SELECT result?","options":["UNIQUE","DISTINCT","ONLY","DEDUP"],"answer":"DISTINCT","difficulty":"easy"}
+    {
+      "id": "sql1",
+      "question": "Which clause is used to filter grouped records?",
+      "options": [
+        "WHERE",
+        "GROUP BY",
+        "HAVING",
+        "ORDER BY"
+      ],
+      "answer": "HAVING",
+      "difficulty": "medium"
+    },
+    {
+      "id": "sql2",
+      "question": "Which JOIN returns only matching rows from both tables?",
+      "options": [
+        "LEFT JOIN",
+        "RIGHT JOIN",
+        "INNER JOIN",
+        "CROSS JOIN"
+      ],
+      "answer": "INNER JOIN",
+      "difficulty": "easy"
+    },
+    {
+      "id": "sql3",
+      "question": "Which command removes all rows while keeping the table structure?",
+      "options": [
+        "DROP",
+        "TRUNCATE",
+        "REMOVE",
+        "CLEAR"
+      ],
+      "answer": "TRUNCATE",
+      "difficulty": "medium"
+    },
+    {
+      "id": "sql4",
+      "question": "Which function returns the number of rows?",
+      "options": [
+        "SUM()",
+        "COUNT()",
+        "TOTAL()",
+        "ROWS()"
+      ],
+      "answer": "COUNT()",
+      "difficulty": "easy"
+    },
+    {
+      "id": "sql5",
+      "question": "Which keyword removes duplicate rows from a SELECT result?",
+      "options": [
+        "UNIQUE",
+        "DISTINCT",
+        "ONLY",
+        "DEDUP"
+      ],
+      "answer": "DISTINCT",
+      "difficulty": "easy"
+    },
+    {
+      "id": "sql6",
+      "question": "Which SQL clause sorts the result set?",
+      "options": [
+        "SORT BY",
+        "ORDER BY",
+        "GROUP BY",
+        "ARRANGE BY"
+      ],
+      "answer": "ORDER BY",
+      "difficulty": "easy"
+    },
+    {
+      "id": "sql7",
+      "question": "Which keyword combines results of two SELECT statements, removing duplicates?",
+      "options": [
+        "UNION",
+        "UNION ALL",
+        "JOIN",
+        "MERGE"
+      ],
+      "answer": "UNION",
+      "difficulty": "medium"
+    },
+    {
+      "id": "sql8",
+      "question": "Which constraint ensures a column's values are unique and not null?",
+      "options": [
+        "UNIQUE",
+        "CHECK",
+        "PRIMARY KEY",
+        "DEFAULT"
+      ],
+      "answer": "PRIMARY KEY",
+      "difficulty": "medium"
+    },
+    {
+      "id": "sql9",
+      "question": "Which type of JOIN returns all rows from the left table and matched rows from the right?",
+      "options": [
+        "INNER JOIN",
+        "LEFT JOIN",
+        "RIGHT JOIN",
+        "CROSS JOIN"
+      ],
+      "answer": "LEFT JOIN",
+      "difficulty": "medium"
+    },
+    {
+      "id": "sql10",
+      "question": "What does a subquery inside a WHERE clause typically do?",
+      "options": [
+        "Filters rows based on another query's result",
+        "Creates a new table",
+        "Deletes a table",
+        "Renames a column"
+      ],
+      "answer": "Filters rows based on another query's result",
+      "difficulty": "hard"
+    }
   ],
   "Python": [
-    {"id":"py1","question":"Which data type is immutable?","options":["List","Dictionary","Set","Tuple"],"answer":"Tuple","difficulty":"easy"},
-    {"id":"py2","question":"Which keyword defines a function?","options":["func","define","def","function"],"answer":"def","difficulty":"easy"},
-    {"id":"py3","question":"What does len([10,20,30]) return?","options":["2","3","4","30"],"answer":"3","difficulty":"easy"},
-    {"id":"py4","question":"Which library is widely used for tabular data analysis?","options":["NumPy","Pandas","Flask","Tkinter"],"answer":"Pandas","difficulty":"medium"},
-    {"id":"py5","question":"What is the result of 2 ** 3 in Python?","options":["5","6","8","9"],"answer":"8","difficulty":"easy"}
+    {
+      "id": "py1",
+      "question": "Which data type is immutable?",
+      "options": [
+        "List",
+        "Dictionary",
+        "Set",
+        "Tuple"
+      ],
+      "answer": "Tuple",
+      "difficulty": "easy"
+    },
+    {
+      "id": "py2",
+      "question": "Which keyword defines a function?",
+      "options": [
+        "func",
+        "define",
+        "def",
+        "function"
+      ],
+      "answer": "def",
+      "difficulty": "easy"
+    },
+    {
+      "id": "py3",
+      "question": "What does len([10,20,30]) return?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "30"
+      ],
+      "answer": "3",
+      "difficulty": "easy"
+    },
+    {
+      "id": "py4",
+      "question": "Which library is widely used for tabular data analysis?",
+      "options": [
+        "NumPy",
+        "Pandas",
+        "Flask",
+        "Tkinter"
+      ],
+      "answer": "Pandas",
+      "difficulty": "medium"
+    },
+    {
+      "id": "py5",
+      "question": "What is the result of 2 ** 3 in Python?",
+      "options": [
+        "5",
+        "6",
+        "8",
+        "9"
+      ],
+      "answer": "8",
+      "difficulty": "easy"
+    },
+    {
+      "id": "py6",
+      "question": "Which keyword is used to handle exceptions in Python?",
+      "options": [
+        "catch",
+        "except",
+        "rescue",
+        "handle"
+      ],
+      "answer": "except",
+      "difficulty": "easy"
+    },
+    {
+      "id": "py7",
+      "question": "What does the 'self' parameter refer to inside a class method?",
+      "options": [
+        "The class itself",
+        "The current instance",
+        "A global variable",
+        "The parent class"
+      ],
+      "answer": "The current instance",
+      "difficulty": "medium"
+    },
+    {
+      "id": "py8",
+      "question": "Which comprehension creates a list from an iterable in one line?",
+      "options": [
+        "List comprehension",
+        "Dict literal",
+        "Set operation",
+        "Lambda block"
+      ],
+      "answer": "List comprehension",
+      "difficulty": "medium"
+    },
+    {
+      "id": "py9",
+      "question": "What is the output of type([]) in Python?",
+      "options": [
+        "<class 'list'>",
+        "<class 'array'>",
+        "<class 'tuple'>",
+        "<class 'set'>"
+      ],
+      "answer": "<class 'list'>",
+      "difficulty": "easy"
+    },
+    {
+      "id": "py10",
+      "question": "Which module is commonly used for working with regular expressions?",
+      "options": [
+        "re",
+        "regex",
+        "string",
+        "pattern"
+      ],
+      "answer": "re",
+      "difficulty": "medium"
+    }
   ],
   "Excel": [
-    {"id":"ex1","question":"Which function calculates the arithmetic mean?","options":["COUNT","SUM","AVERAGE","MEANVALUE"],"answer":"AVERAGE","difficulty":"easy"},
-    {"id":"ex2","question":"Which feature summarizes data by categories?","options":["PivotTable","Spell Check","Page Break","Format Painter"],"answer":"PivotTable","difficulty":"medium"},
-    {"id":"ex3","question":"Which symbol starts a formula in Excel?","options":["#","=","@","$"],"answer":"=","difficulty":"easy"},
-    {"id":"ex4","question":"Which function looks up a value vertically in older Excel versions?","options":["VLOOKUP","HLOOKUP","MATCHROW","SEARCHV"],"answer":"VLOOKUP","difficulty":"medium"},
-    {"id":"ex5","question":"Which chart is commonly used to compare categories?","options":["Bar chart","Scatter only","Surface only","Radar only"],"answer":"Bar chart","difficulty":"easy"}
+    {
+      "id": "ex1",
+      "question": "Which function calculates the arithmetic mean?",
+      "options": [
+        "COUNT",
+        "SUM",
+        "AVERAGE",
+        "MEANVALUE"
+      ],
+      "answer": "AVERAGE",
+      "difficulty": "easy"
+    },
+    {
+      "id": "ex2",
+      "question": "Which feature summarizes data by categories?",
+      "options": [
+        "PivotTable",
+        "Spell Check",
+        "Page Break",
+        "Format Painter"
+      ],
+      "answer": "PivotTable",
+      "difficulty": "medium"
+    },
+    {
+      "id": "ex3",
+      "question": "Which symbol starts a formula in Excel?",
+      "options": [
+        "#",
+        "=",
+        "@",
+        "$"
+      ],
+      "answer": "=",
+      "difficulty": "easy"
+    },
+    {
+      "id": "ex4",
+      "question": "Which function looks up a value vertically in older Excel versions?",
+      "options": [
+        "VLOOKUP",
+        "HLOOKUP",
+        "MATCHROW",
+        "SEARCHV"
+      ],
+      "answer": "VLOOKUP",
+      "difficulty": "medium"
+    },
+    {
+      "id": "ex5",
+      "question": "Which chart is commonly used to compare categories?",
+      "options": [
+        "Bar chart",
+        "Scatter only",
+        "Surface only",
+        "Radar only"
+      ],
+      "answer": "Bar chart",
+      "difficulty": "easy"
+    },
+    {
+      "id": "ex6",
+      "question": "Which function combines text from multiple cells into one?",
+      "options": [
+        "CONCATENATE",
+        "MERGE",
+        "JOINCELLS",
+        "TEXTADD"
+      ],
+      "answer": "CONCATENATE",
+      "difficulty": "easy"
+    },
+    {
+      "id": "ex7",
+      "question": "Which function looks up a value in a table using both row and column matching?",
+      "options": [
+        "INDEX-MATCH",
+        "VLOOKUP only",
+        "SUMIF",
+        "COUNTIF"
+      ],
+      "answer": "INDEX-MATCH",
+      "difficulty": "hard"
+    },
+    {
+      "id": "ex8",
+      "question": "Which shortcut key opens the Format Cells dialog?",
+      "options": [
+        "Ctrl+1",
+        "Ctrl+F",
+        "Ctrl+B",
+        "Ctrl+P"
+      ],
+      "answer": "Ctrl+1",
+      "difficulty": "easy"
+    },
+    {
+      "id": "ex9",
+      "question": "Which function counts cells that meet a single condition?",
+      "options": [
+        "COUNTIF",
+        "SUMIF",
+        "AVERAGEIF",
+        "IFCOUNT"
+      ],
+      "answer": "COUNTIF",
+      "difficulty": "easy"
+    },
+    {
+      "id": "ex10",
+      "question": "What does the $ symbol do in a cell reference like $A$1?",
+      "options": [
+        "Makes the reference absolute",
+        "Marks currency format only",
+        "Deletes the cell",
+        "Converts text to number"
+      ],
+      "answer": "Makes the reference absolute",
+      "difficulty": "medium"
+    }
   ],
   "Statistics": [
-    {"id":"st1","question":"What is the middle value of an ordered dataset called?","options":["Mean","Median","Mode","Range"],"answer":"Median","difficulty":"easy"},
-    {"id":"st2","question":"Which measure describes spread around the mean?","options":["Variance","Median","Mode","Frequency"],"answer":"Variance","difficulty":"medium"},
-    {"id":"st3","question":"What is the most frequent value called?","options":["Mean","Median","Mode","Range"],"answer":"Mode","difficulty":"easy"},
-    {"id":"st4","question":"A correlation coefficient close to +1 indicates what?","options":["Strong positive relationship","Strong negative relationship","No relationship","Random error"],"answer":"Strong positive relationship","difficulty":"medium"},
-    {"id":"st5","question":"What is the probability of a certain event?","options":["0","0.5","1","Depends always"],"answer":"1","difficulty":"easy"}
+    {
+      "id": "st1",
+      "question": "What is the middle value of an ordered dataset called?",
+      "options": [
+        "Mean",
+        "Median",
+        "Mode",
+        "Range"
+      ],
+      "answer": "Median",
+      "difficulty": "easy"
+    },
+    {
+      "id": "st2",
+      "question": "Which measure describes spread around the mean?",
+      "options": [
+        "Variance",
+        "Median",
+        "Mode",
+        "Frequency"
+      ],
+      "answer": "Variance",
+      "difficulty": "medium"
+    },
+    {
+      "id": "st3",
+      "question": "What is the most frequent value called?",
+      "options": [
+        "Mean",
+        "Median",
+        "Mode",
+        "Range"
+      ],
+      "answer": "Mode",
+      "difficulty": "easy"
+    },
+    {
+      "id": "st4",
+      "question": "A correlation coefficient close to +1 indicates what?",
+      "options": [
+        "Strong positive relationship",
+        "Strong negative relationship",
+        "No relationship",
+        "Random error"
+      ],
+      "answer": "Strong positive relationship",
+      "difficulty": "medium"
+    },
+    {
+      "id": "st5",
+      "question": "What is the probability of a certain event?",
+      "options": [
+        "0",
+        "0.5",
+        "1",
+        "Depends always"
+      ],
+      "answer": "1",
+      "difficulty": "easy"
+    },
+    {
+      "id": "st6",
+      "question": "What does a p-value less than 0.05 typically suggest in hypothesis testing?",
+      "options": [
+        "Statistically significant result",
+        "No relationship exists",
+        "Sample size is too small",
+        "Data is normally distributed"
+      ],
+      "answer": "Statistically significant result",
+      "difficulty": "hard"
+    },
+    {
+      "id": "st7",
+      "question": "Which distribution is symmetric and bell-shaped?",
+      "options": [
+        "Normal distribution",
+        "Poisson distribution",
+        "Binomial distribution",
+        "Uniform distribution"
+      ],
+      "answer": "Normal distribution",
+      "difficulty": "medium"
+    },
+    {
+      "id": "st8",
+      "question": "What does standard deviation measure?",
+      "options": [
+        "Spread of data around the mean",
+        "The middle value",
+        "The most frequent value",
+        "The total sum of values"
+      ],
+      "answer": "Spread of data around the mean",
+      "difficulty": "medium"
+    },
+    {
+      "id": "st9",
+      "question": "What is the range of a dataset?",
+      "options": [
+        "Difference between max and min values",
+        "The average value",
+        "The middle value",
+        "The most common value"
+      ],
+      "answer": "Difference between max and min values",
+      "difficulty": "easy"
+    },
+    {
+      "id": "st10",
+      "question": "Which type of sampling gives every member an equal chance of selection?",
+      "options": [
+        "Random sampling",
+        "Convenience sampling",
+        "Judgment sampling",
+        "Snowball sampling"
+      ],
+      "answer": "Random sampling",
+      "difficulty": "medium"
+    }
   ],
   "Power BI": [
-    {"id":"pb1","question":"What is Power BI mainly used for?","options":["Video editing","Business intelligence and data visualization","Operating systems","Web hosting"],"answer":"Business intelligence and data visualization","difficulty":"easy"},
-    {"id":"pb2","question":"Which language is commonly used for measures in Power BI?","options":["DAX","HTML","CSS","Bash"],"answer":"DAX","difficulty":"medium"},
-    {"id":"pb3","question":"Which view is used to create relationships between tables?","options":["Model view","Reading view","Print view","Code view"],"answer":"Model view","difficulty":"medium"},
-    {"id":"pb4","question":"A dashboard is primarily used to display what?","options":["Raw code","Key insights and visual summaries","Only images","Only database schemas"],"answer":"Key insights and visual summaries","difficulty":"easy"},
-    {"id":"pb5","question":"Which visual is suitable for showing a trend over time?","options":["Line chart","Pie chart only","Card only","Slicer only"],"answer":"Line chart","difficulty":"easy"}
+    {
+      "id": "pb1",
+      "question": "What is Power BI mainly used for?",
+      "options": [
+        "Video editing",
+        "Business intelligence and data visualization",
+        "Operating systems",
+        "Web hosting"
+      ],
+      "answer": "Business intelligence and data visualization",
+      "difficulty": "easy"
+    },
+    {
+      "id": "pb2",
+      "question": "Which language is commonly used for measures in Power BI?",
+      "options": [
+        "DAX",
+        "HTML",
+        "CSS",
+        "Bash"
+      ],
+      "answer": "DAX",
+      "difficulty": "medium"
+    },
+    {
+      "id": "pb3",
+      "question": "Which view is used to create relationships between tables?",
+      "options": [
+        "Model view",
+        "Reading view",
+        "Print view",
+        "Code view"
+      ],
+      "answer": "Model view",
+      "difficulty": "medium"
+    },
+    {
+      "id": "pb4",
+      "question": "A dashboard is primarily used to display what?",
+      "options": [
+        "Raw code",
+        "Key insights and visual summaries",
+        "Only images",
+        "Only database schemas"
+      ],
+      "answer": "Key insights and visual summaries",
+      "difficulty": "easy"
+    },
+    {
+      "id": "pb5",
+      "question": "Which visual is suitable for showing a trend over time?",
+      "options": [
+        "Line chart",
+        "Pie chart only",
+        "Card only",
+        "Slicer only"
+      ],
+      "answer": "Line chart",
+      "difficulty": "easy"
+    },
+    {
+      "id": "pb6",
+      "question": "Which feature lets you filter visuals interactively by clicking a data point?",
+      "options": [
+        "Cross-filtering",
+        "Bookmarking only",
+        "Data refresh",
+        "Row-level security"
+      ],
+      "answer": "Cross-filtering",
+      "difficulty": "medium"
+    },
+    {
+      "id": "pb7",
+      "question": "Which Power BI component connects to and transforms raw data?",
+      "options": [
+        "Power Query",
+        "Power Pivot only",
+        "Power Map",
+        "Power Automate"
+      ],
+      "answer": "Power Query",
+      "difficulty": "easy"
+    },
+    {
+      "id": "pb8",
+      "question": "What does a calculated column in Power BI do?",
+      "options": [
+        "Adds a new column computed with DAX at the row level",
+        "Deletes existing data",
+        "Refreshes the dataset",
+        "Changes visual color only"
+      ],
+      "answer": "Adds a new column computed with DAX at the row level",
+      "difficulty": "medium"
+    },
+    {
+      "id": "pb9",
+      "question": "Which feature restricts data visibility based on the user viewing the report?",
+      "options": [
+        "Row-level security",
+        "Bookmarks",
+        "Drillthrough",
+        "Tooltips"
+      ],
+      "answer": "Row-level security",
+      "difficulty": "hard"
+    },
+    {
+      "id": "pb10",
+      "question": "Which file format does Power BI Desktop save reports in?",
+      "options": [
+        ".pbix",
+        ".pbi",
+        ".xlsx",
+        ".pbrpt"
+      ],
+      "answer": ".pbix",
+      "difficulty": "easy"
+    }
   ],
   "Git": [
-    {"id":"git1","question":"Which command creates a local Git repository?","options":["git start","git init","git create","git repo"],"answer":"git init","difficulty":"easy"},
-    {"id":"git2","question":"Which command records staged changes?","options":["git save","git commit","git record","git push"],"answer":"git commit","difficulty":"easy"},
-    {"id":"git3","question":"Which command sends local commits to a remote repository?","options":["git send","git upload","git push","git publish"],"answer":"git push","difficulty":"easy"},
-    {"id":"git4","question":"Which command copies a remote repository locally?","options":["git clone","git copy","git pullall","git fork"],"answer":"git clone","difficulty":"easy"},
-    {"id":"git5","question":"Which file commonly lists files Git should ignore?","options":[".gitkeep",".gitignore",".ignoregit","git.config"],"answer":".gitignore","difficulty":"medium"}
+    {
+      "id": "git1",
+      "question": "Which command creates a local Git repository?",
+      "options": [
+        "git start",
+        "git init",
+        "git create",
+        "git repo"
+      ],
+      "answer": "git init",
+      "difficulty": "easy"
+    },
+    {
+      "id": "git2",
+      "question": "Which command records staged changes?",
+      "options": [
+        "git save",
+        "git commit",
+        "git record",
+        "git push"
+      ],
+      "answer": "git commit",
+      "difficulty": "easy"
+    },
+    {
+      "id": "git3",
+      "question": "Which command sends local commits to a remote repository?",
+      "options": [
+        "git send",
+        "git upload",
+        "git push",
+        "git publish"
+      ],
+      "answer": "git push",
+      "difficulty": "easy"
+    },
+    {
+      "id": "git4",
+      "question": "Which command copies a remote repository locally?",
+      "options": [
+        "git clone",
+        "git copy",
+        "git pullall",
+        "git fork"
+      ],
+      "answer": "git clone",
+      "difficulty": "easy"
+    },
+    {
+      "id": "git5",
+      "question": "Which file commonly lists files Git should ignore?",
+      "options": [
+        ".gitkeep",
+        ".gitignore",
+        ".ignoregit",
+        "git.config"
+      ],
+      "answer": ".gitignore",
+      "difficulty": "medium"
+    },
+    {
+      "id": "git6",
+      "question": "Which command shows the current status of the working directory?",
+      "options": [
+        "git status",
+        "git show",
+        "git log",
+        "git info"
+      ],
+      "answer": "git status",
+      "difficulty": "easy"
+    },
+    {
+      "id": "git7",
+      "question": "Which command creates a new branch?",
+      "options": [
+        "git branch <name>",
+        "git newbranch <name>",
+        "git create <name>",
+        "git start <name>"
+      ],
+      "answer": "git branch <name>",
+      "difficulty": "easy"
+    },
+    {
+      "id": "git8",
+      "question": "Which command merges changes from one branch into the current branch?",
+      "options": [
+        "git merge",
+        "git combine",
+        "git join",
+        "git link"
+      ],
+      "answer": "git merge",
+      "difficulty": "medium"
+    },
+    {
+      "id": "git9",
+      "question": "What does 'git pull' do?",
+      "options": [
+        "Fetches and merges changes from a remote repository",
+        "Deletes local commits",
+        "Pushes local commits to remote",
+        "Creates a new repository"
+      ],
+      "answer": "Fetches and merges changes from a remote repository",
+      "difficulty": "medium"
+    },
+    {
+      "id": "git10",
+      "question": "Which command temporarily saves uncommitted changes without committing them?",
+      "options": [
+        "git stash",
+        "git save",
+        "git hold",
+        "git pause"
+      ],
+      "answer": "git stash",
+      "difficulty": "hard"
+    }
   ],
   "OOP": [
-    {"id":"oop1","question":"Which concept bundles data and methods together?","options":["Encapsulation","Compilation","Iteration","Indexing"],"answer":"Encapsulation","difficulty":"easy"},
-    {"id":"oop2","question":"Which concept allows one interface to have different implementations?","options":["Polymorphism","Serialization","Parsing","Iteration"],"answer":"Polymorphism","difficulty":"medium"},
-    {"id":"oop3","question":"Creating a new class from an existing class is called?","options":["Inheritance","Aggregation only","Casting","Overloading only"],"answer":"Inheritance","difficulty":"easy"},
-    {"id":"oop4","question":"What is a constructor primarily used for?","options":["Initialize objects","Delete classes","Compile code","Create databases"],"answer":"Initialize objects","difficulty":"easy"},
-    {"id":"oop5","question":"Hiding implementation details and showing essential features is?","options":["Abstraction","Duplication","Indexing","Normalization"],"answer":"Abstraction","difficulty":"medium"}
+    {
+      "id": "oop1",
+      "question": "Which concept bundles data and methods together?",
+      "options": [
+        "Encapsulation",
+        "Compilation",
+        "Iteration",
+        "Indexing"
+      ],
+      "answer": "Encapsulation",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oop2",
+      "question": "Which concept allows one interface to have different implementations?",
+      "options": [
+        "Polymorphism",
+        "Serialization",
+        "Parsing",
+        "Iteration"
+      ],
+      "answer": "Polymorphism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oop3",
+      "question": "Creating a new class from an existing class is called?",
+      "options": [
+        "Inheritance",
+        "Aggregation only",
+        "Casting",
+        "Overloading only"
+      ],
+      "answer": "Inheritance",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oop4",
+      "question": "What is a constructor primarily used for?",
+      "options": [
+        "Initialize objects",
+        "Delete classes",
+        "Compile code",
+        "Create databases"
+      ],
+      "answer": "Initialize objects",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oop5",
+      "question": "Hiding implementation details and showing essential features is?",
+      "options": [
+        "Abstraction",
+        "Duplication",
+        "Indexing",
+        "Normalization"
+      ],
+      "answer": "Abstraction",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oop6",
+      "question": "What is method overloading?",
+      "options": [
+        "Defining multiple methods with the same name but different parameters",
+        "Overwriting a parent method entirely",
+        "Deleting a method at runtime",
+        "Combining two classes into one"
+      ],
+      "answer": "Defining multiple methods with the same name but different parameters",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oop7",
+      "question": "What is method overriding?",
+      "options": [
+        "A subclass redefining a method from its parent class",
+        "Adding a new unrelated method",
+        "Removing a method permanently",
+        "Duplicating a class"
+      ],
+      "answer": "A subclass redefining a method from its parent class",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oop8",
+      "question": "Which access modifier restricts a member to within its own class only?",
+      "options": [
+        "Private",
+        "Public",
+        "Protected",
+        "Global"
+      ],
+      "answer": "Private",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oop9",
+      "question": "What is a class in OOP?",
+      "options": [
+        "A blueprint for creating objects",
+        "A single instance of data",
+        "A function without parameters",
+        "A database table"
+      ],
+      "answer": "A blueprint for creating objects",
+      "difficulty": "easy"
+    },
+    {
+      "id": "oop10",
+      "question": "Which OOP concept allows a class to acquire properties of another class?",
+      "options": [
+        "Inheritance",
+        "Encapsulation",
+        "Abstraction",
+        "Polymorphism"
+      ],
+      "answer": "Inheritance",
+      "difficulty": "easy"
+    }
   ],
   "APIs": [
-    {"id":"api1","question":"What does API commonly stand for?","options":["Application Programming Interface","Application Process Internet","Advanced Program Input","Automated Programming Instruction"],"answer":"Application Programming Interface","difficulty":"easy"},
-    {"id":"api2","question":"Which HTTP method is commonly used to retrieve data?","options":["GET","POST","PATCH","DELETE"],"answer":"GET","difficulty":"easy"},
-    {"id":"api3","question":"Which HTTP status means Not Found?","options":["200","201","404","500"],"answer":"404","difficulty":"easy"},
-    {"id":"api4","question":"Which format is commonly used for REST API data exchange?","options":["JSON","EXE","PSD","MP3"],"answer":"JSON","difficulty":"easy"},
-    {"id":"api5","question":"Which HTTP method is commonly used to create a resource?","options":["GET","POST","HEAD","OPTIONS"],"answer":"POST","difficulty":"medium"}
+    {
+      "id": "api1",
+      "question": "What does API commonly stand for?",
+      "options": [
+        "Application Programming Interface",
+        "Application Process Internet",
+        "Advanced Program Input",
+        "Automated Programming Instruction"
+      ],
+      "answer": "Application Programming Interface",
+      "difficulty": "easy"
+    },
+    {
+      "id": "api2",
+      "question": "Which HTTP method is commonly used to retrieve data?",
+      "options": [
+        "GET",
+        "POST",
+        "PATCH",
+        "DELETE"
+      ],
+      "answer": "GET",
+      "difficulty": "easy"
+    },
+    {
+      "id": "api3",
+      "question": "Which HTTP status means Not Found?",
+      "options": [
+        "200",
+        "201",
+        "404",
+        "500"
+      ],
+      "answer": "404",
+      "difficulty": "easy"
+    },
+    {
+      "id": "api4",
+      "question": "Which format is commonly used for REST API data exchange?",
+      "options": [
+        "JSON",
+        "EXE",
+        "PSD",
+        "MP3"
+      ],
+      "answer": "JSON",
+      "difficulty": "easy"
+    },
+    {
+      "id": "api5",
+      "question": "Which HTTP method is commonly used to create a resource?",
+      "options": [
+        "GET",
+        "POST",
+        "HEAD",
+        "OPTIONS"
+      ],
+      "answer": "POST",
+      "difficulty": "medium"
+    },
+    {
+      "id": "api6",
+      "question": "Which HTTP method is typically used to update an existing resource fully?",
+      "options": [
+        "PUT",
+        "GET",
+        "HEAD",
+        "OPTIONS"
+      ],
+      "answer": "PUT",
+      "difficulty": "medium"
+    },
+    {
+      "id": "api7",
+      "question": "Which HTTP status code indicates a successful request?",
+      "options": [
+        "200",
+        "404",
+        "500",
+        "302"
+      ],
+      "answer": "200",
+      "difficulty": "easy"
+    },
+    {
+      "id": "api8",
+      "question": "What is an API key mainly used for?",
+      "options": [
+        "Authenticating and identifying the calling application",
+        "Formatting the response body",
+        "Compressing data",
+        "Styling the API documentation"
+      ],
+      "answer": "Authenticating and identifying the calling application",
+      "difficulty": "medium"
+    },
+    {
+      "id": "api9",
+      "question": "What does REST stand for in RESTful APIs?",
+      "options": [
+        "Representational State Transfer",
+        "Remote Endpoint Service Transfer",
+        "Rapid Execution State Transfer",
+        "Relational State Transaction"
+      ],
+      "answer": "Representational State Transfer",
+      "difficulty": "hard"
+    },
+    {
+      "id": "api10",
+      "question": "Which HTTP method is used to delete a resource?",
+      "options": [
+        "DELETE",
+        "REMOVE",
+        "GET",
+        "PURGE"
+      ],
+      "answer": "DELETE",
+      "difficulty": "easy"
+    }
   ],
   "HTML/CSS": [
-    {"id":"web1","question":"Which HTML tag creates a hyperlink?","options":["<a>","<link>","<href>","<url>"],"answer":"<a>","difficulty":"easy"},
-    {"id":"web2","question":"Which CSS property changes text color?","options":["font-color","color","text-color","foreground"],"answer":"color","difficulty":"easy"},
-    {"id":"web3","question":"Which language styles an HTML page?","options":["CSS","SQL","JSON","CSV"],"answer":"CSS","difficulty":"easy"},
-    {"id":"web4","question":"Which CSS layout system is designed for one-dimensional layouts?","options":["Flexbox","FTP","SMTP","DOM"],"answer":"Flexbox","difficulty":"medium"},
-    {"id":"web5","question":"Which HTML element is normally used for the main page heading?","options":["<h1>","<head>","<title>","<header1>"],"answer":"<h1>","difficulty":"easy"}
+    {
+      "id": "web1",
+      "question": "Which HTML tag creates a hyperlink?",
+      "options": [
+        "<a>",
+        "<link>",
+        "<href>",
+        "<url>"
+      ],
+      "answer": "<a>",
+      "difficulty": "easy"
+    },
+    {
+      "id": "web2",
+      "question": "Which CSS property changes text color?",
+      "options": [
+        "font-color",
+        "color",
+        "text-color",
+        "foreground"
+      ],
+      "answer": "color",
+      "difficulty": "easy"
+    },
+    {
+      "id": "web3",
+      "question": "Which language styles an HTML page?",
+      "options": [
+        "CSS",
+        "SQL",
+        "JSON",
+        "CSV"
+      ],
+      "answer": "CSS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "web4",
+      "question": "Which CSS layout system is designed for one-dimensional layouts?",
+      "options": [
+        "Flexbox",
+        "FTP",
+        "SMTP",
+        "DOM"
+      ],
+      "answer": "Flexbox",
+      "difficulty": "medium"
+    },
+    {
+      "id": "web5",
+      "question": "Which HTML element is normally used for the main page heading?",
+      "options": [
+        "<h1>",
+        "<head>",
+        "<title>",
+        "<header1>"
+      ],
+      "answer": "<h1>",
+      "difficulty": "easy"
+    },
+    {
+      "id": "web6",
+      "question": "Which CSS property controls the space outside an element's border?",
+      "options": [
+        "margin",
+        "padding",
+        "border-spacing",
+        "outline"
+      ],
+      "answer": "margin",
+      "difficulty": "easy"
+    },
+    {
+      "id": "web7",
+      "question": "Which HTML attribute specifies an alternate text for an image?",
+      "options": [
+        "alt",
+        "title",
+        "src",
+        "label"
+      ],
+      "answer": "alt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "web8",
+      "question": "Which CSS layout model arranges items in rows and columns two-dimensionally?",
+      "options": [
+        "Grid",
+        "Flexbox",
+        "Float",
+        "Table"
+      ],
+      "answer": "Grid",
+      "difficulty": "medium"
+    },
+    {
+      "id": "web9",
+      "question": "Which CSS selector targets an element with a specific id?",
+      "options": [
+        "#id",
+        ".class",
+        "*",
+        "element"
+      ],
+      "answer": "#id",
+      "difficulty": "easy"
+    },
+    {
+      "id": "web10",
+      "question": "Which media feature is used to write responsive CSS rules?",
+      "options": [
+        "@media",
+        "@responsive",
+        "@screen",
+        "@viewport-only"
+      ],
+      "answer": "@media",
+      "difficulty": "medium"
+    }
   ],
   "JavaScript": [
-    {"id":"js1","question":"Which keyword declares a block-scoped variable that can be reassigned?","options":["var","let","const","static"],"answer":"let","difficulty":"easy"},
-    {"id":"js2","question":"Which method converts a JSON string into a JavaScript object?","options":["JSON.parse()","JSON.convert()","JSON.object()","JSON.read()"],"answer":"JSON.parse()","difficulty":"medium"},
-    {"id":"js3","question":"Which symbol is used for strict equality?","options":["=","==","===","!="],"answer":"===","difficulty":"easy"},
-    {"id":"js4","question":"Which browser API selects an element by its id?","options":["document.getElementById()","window.id()","element.findId()","document.selectIdOnly()"],"answer":"document.getElementById()","difficulty":"easy"},
-    {"id":"js5","question":"What does Array.map() return?","options":["A new transformed array","Only the first item","A boolean","A string always"],"answer":"A new transformed array","difficulty":"medium"}
+    {
+      "id": "js1",
+      "question": "Which keyword declares a block-scoped variable that can be reassigned?",
+      "options": [
+        "var",
+        "let",
+        "const",
+        "static"
+      ],
+      "answer": "let",
+      "difficulty": "easy"
+    },
+    {
+      "id": "js2",
+      "question": "Which method converts a JSON string into a JavaScript object?",
+      "options": [
+        "JSON.parse()",
+        "JSON.convert()",
+        "JSON.object()",
+        "JSON.read()"
+      ],
+      "answer": "JSON.parse()",
+      "difficulty": "medium"
+    },
+    {
+      "id": "js3",
+      "question": "Which symbol is used for strict equality?",
+      "options": [
+        "=",
+        "==",
+        "===",
+        "!="
+      ],
+      "answer": "===",
+      "difficulty": "easy"
+    },
+    {
+      "id": "js4",
+      "question": "Which browser API selects an element by its id?",
+      "options": [
+        "document.getElementById()",
+        "window.id()",
+        "element.findId()",
+        "document.selectIdOnly()"
+      ],
+      "answer": "document.getElementById()",
+      "difficulty": "easy"
+    },
+    {
+      "id": "js5",
+      "question": "What does Array.map() return?",
+      "options": [
+        "A new transformed array",
+        "Only the first item",
+        "A boolean",
+        "A string always"
+      ],
+      "answer": "A new transformed array",
+      "difficulty": "medium"
+    },
+    {
+      "id": "js6",
+      "question": "Which keyword declares a variable that cannot be reassigned?",
+      "options": [
+        "const",
+        "let",
+        "var",
+        "final"
+      ],
+      "answer": "const",
+      "difficulty": "easy"
+    },
+    {
+      "id": "js7",
+      "question": "What does the 'async' keyword do when placed before a function?",
+      "options": [
+        "Makes the function return a Promise",
+        "Makes the function run synchronously",
+        "Deletes the function after use",
+        "Converts the function to a string"
+      ],
+      "answer": "Makes the function return a Promise",
+      "difficulty": "hard"
+    },
+    {
+      "id": "js8",
+      "question": "Which method adds a new element to the end of an array?",
+      "options": [
+        "push()",
+        "pop()",
+        "shift()",
+        "unshift()"
+      ],
+      "answer": "push()",
+      "difficulty": "easy"
+    },
+    {
+      "id": "js9",
+      "question": "What does the '===' operator check that '==' does not?",
+      "options": [
+        "Both value and type",
+        "Only value",
+        "Only type",
+        "Neither value nor type"
+      ],
+      "answer": "Both value and type",
+      "difficulty": "medium"
+    },
+    {
+      "id": "js10",
+      "question": "Which event fires when the DOM content has fully loaded?",
+      "options": [
+        "DOMContentLoaded",
+        "onLoadPage",
+        "windowReady",
+        "documentStart"
+      ],
+      "answer": "DOMContentLoaded",
+      "difficulty": "medium"
+    }
   ],
   "Machine Learning": [
-    {"id":"ml1","question":"What type of learning uses labeled training data?","options":["Supervised learning","Unsupervised learning","Random learning","Manual learning"],"answer":"Supervised learning","difficulty":"easy"},
-    {"id":"ml2","question":"Which task predicts a continuous numeric value?","options":["Regression","Classification","Clustering","Association"],"answer":"Regression","difficulty":"easy"},
-    {"id":"ml3","question":"Which metric is commonly used for classification accuracy?","options":["Accuracy","RMSE only","MAE only","Variance only"],"answer":"Accuracy","difficulty":"easy"},
-    {"id":"ml4","question":"What is overfitting?","options":["Model memorizes training data and generalizes poorly","Model has no parameters","Dataset has no labels","Model always underperforms training data"],"answer":"Model memorizes training data and generalizes poorly","difficulty":"medium"},
-    {"id":"ml5","question":"Which method can split data into training and testing sets?","options":["train_test_split","data_splitter_only","model.divide","fit_split"],"answer":"train_test_split","difficulty":"medium"}
+    {
+      "id": "ml1",
+      "question": "What type of learning uses labeled training data?",
+      "options": [
+        "Supervised learning",
+        "Unsupervised learning",
+        "Random learning",
+        "Manual learning"
+      ],
+      "answer": "Supervised learning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "ml2",
+      "question": "Which task predicts a continuous numeric value?",
+      "options": [
+        "Regression",
+        "Classification",
+        "Clustering",
+        "Association"
+      ],
+      "answer": "Regression",
+      "difficulty": "easy"
+    },
+    {
+      "id": "ml3",
+      "question": "Which metric is commonly used for classification accuracy?",
+      "options": [
+        "Accuracy",
+        "RMSE only",
+        "MAE only",
+        "Variance only"
+      ],
+      "answer": "Accuracy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "ml4",
+      "question": "What is overfitting?",
+      "options": [
+        "Model memorizes training data and generalizes poorly",
+        "Model has no parameters",
+        "Dataset has no labels",
+        "Model always underperforms training data"
+      ],
+      "answer": "Model memorizes training data and generalizes poorly",
+      "difficulty": "medium"
+    },
+    {
+      "id": "ml5",
+      "question": "Which method can split data into training and testing sets?",
+      "options": [
+        "train_test_split",
+        "data_splitter_only",
+        "model.divide",
+        "fit_split"
+      ],
+      "answer": "train_test_split",
+      "difficulty": "medium"
+    },
+    {
+      "id": "ml6",
+      "question": "Which technique groups similar data points without labeled outcomes?",
+      "options": [
+        "Clustering",
+        "Regression",
+        "Classification",
+        "Backpropagation"
+      ],
+      "answer": "Clustering",
+      "difficulty": "medium"
+    },
+    {
+      "id": "ml7",
+      "question": "What does the term 'feature' refer to in a machine learning dataset?",
+      "options": [
+        "An input variable used for prediction",
+        "The final output label",
+        "The model's accuracy score",
+        "The training algorithm"
+      ],
+      "answer": "An input variable used for prediction",
+      "difficulty": "easy"
+    },
+    {
+      "id": "ml8",
+      "question": "Which technique helps reduce overfitting by penalizing large model weights?",
+      "options": [
+        "Regularization",
+        "Normalization only",
+        "One-hot encoding",
+        "Feature scaling only"
+      ],
+      "answer": "Regularization",
+      "difficulty": "hard"
+    },
+    {
+      "id": "ml9",
+      "question": "What is a confusion matrix used for?",
+      "options": [
+        "Evaluating classification model performance",
+        "Scaling numeric features",
+        "Splitting data into batches",
+        "Visualizing regression lines only"
+      ],
+      "answer": "Evaluating classification model performance",
+      "difficulty": "medium"
+    },
+    {
+      "id": "ml10",
+      "question": "Which algorithm is commonly used for simple linear relationships between variables?",
+      "options": [
+        "Linear Regression",
+        "K-Means",
+        "Decision Tree only",
+        "Neural Network only"
+      ],
+      "answer": "Linear Regression",
+      "difficulty": "easy"
+    }
   ]
 }
